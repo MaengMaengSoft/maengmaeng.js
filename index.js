@@ -32,26 +32,3 @@ const 맹맹 = {
         }
     },
 }
-
-function print(text) {
-    console.log(text)
-}
-
-맹맹.get({
-    target: "button",
-    event: "click",
-    code: ()=>{
-        맹맹.target("input").value = "기본값"
-        맹맹.target("h1").innerText = "기본값"
-    }
-})
-
-맹맹.get({
-    target: "input",
-    event: "input",
-    code: ()=>{
-        맹맹.target("h1").innerHTML = 맹맹.target("input").value
-    }
-})
-
-맹맹.target("button").innerText = "초기화"
